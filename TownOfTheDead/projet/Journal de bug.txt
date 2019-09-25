@@ -1,0 +1,5 @@
+10.1.17:Bug dans la fonction d'apparition des zombies #boucleinfini
+résolu
+18.1.17:Bug dans la collision du mur ouvert
+non-résolu
+18.1.17: Revive non-fonctionnel

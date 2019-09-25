@@ -1,0 +1,30 @@
+Classe Player:
+
+Var:
+PosInterfaceX
+PosInterfaceY
+Position X
+Position Y
+PointDeVie
+Attaque
+Image
+Etat
+
+Fonc:
+déplacer(g,d,h,b)
+
+Touché()
+
+Tirer(g,d,h,b)
+
+Tourner(direction)
+
+Acheter(Position)
+
+Ramasser(Position)
+
+
+
+
+
+

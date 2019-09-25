@@ -1,0 +1,9 @@
+0=Non collision
+1=Collision
+2=Health
+3=Revive
+4=Damage
+5=Speed
+6=Amélioration
+7=PortePaP
+8=PortePaP Ouverte

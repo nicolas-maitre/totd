@@ -1,0 +1,4 @@
+C:\Users\Azertycraft\Dropbox\Projet C#\TownOfTheDead\projet\TOTD\TOTD\obj\x86\Release\TOTD.Properties.Resources.resources
+C:\Users\Azertycraft\Dropbox\Projet C#\TownOfTheDead\projet\TOTD\TOTD\obj\x86\Release\TOTDGame.csproj.GenerateResource.Cache
+C:\Users\Azertycraft\Dropbox\Projet C#\TownOfTheDead\projet\TOTD\TOTD\obj\x86\Release\TOTD.exe
+C:\Users\Azertycraft\Dropbox\Projet C#\TownOfTheDead\projet\TOTD\TOTD\obj\x86\Release\TOTD.pdb

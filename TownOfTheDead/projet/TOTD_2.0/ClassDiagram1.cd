@@ -1,0 +1,81 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="TOTD.Balle" Collapsed="true">
+    <Position X="34.25" Y="4" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>gEQAAgAAAUEAIAAgASAAMAAAAEABAARjAQAAAAAAAAE=</HashCode>
+      <FileName>Core\Balle.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TOTD.Entité">
+    <Position X="30.5" Y="6.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAAAAAAEAAIICgAAAAIAAAAAAAAAQgAAiBABEAEAA=</HashCode>
+      <FileName>Core\Entité.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TOTD.Fond" Collapsed="true">
+    <Position X="36.25" Y="4" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Core\Fond.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TOTD.GameObject" Collapsed="true">
+    <Position X="33" Y="2.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAABAgAACgAgAAgAAABAACBAQAAgAAIAAAIAAAA=</HashCode>
+      <FileName>Core\GameObject.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TOTD.GameWin" Collapsed="true">
+    <Position X="36.5" Y="2.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AEQAAAAAAAAAAAAgACAAIAAAAAAAAAABAAAAAAAAAAA=</HashCode>
+      <FileName>Core\GameWin.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TOTD.Player" Collapsed="true">
+    <Position X="32.5" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>GEQAEgIQjUUAEMCAAgAAAMIEAAAQQAggQAc0AA0cAAA=</HashCode>
+      <FileName>Core\Player.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TOTD.Wall" Collapsed="true">
+    <Position X="38.5" Y="4" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAIAAgAAAAIAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Core\Wall.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TOTD.World" Collapsed="true">
+    <Position X="32.25" Y="4" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AEQAMAAAAAAAAAIAAAAAAAAAAAAAAAABAQAAAAAAADA=</HashCode>
+      <FileName>Core\World.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TOTD.Zombie" Collapsed="true">
+    <Position X="30.25" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>BEQBBAAEAUAAAICAAAEAAAAQAgEBAAAhACQgAAAAwgA=</HashCode>
+      <FileName>Core\Zombie.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TOTD.GameManager" Collapsed="true">
+    <Position X="34.75" Y="2.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AIQhFGiBCIAgJQIAACQQwAHAAECABAERooQkBA4AoAE=</HashCode>
+      <FileName>GameManager.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TOTD.TOTD" Collapsed="true">
+    <Position X="33" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AEYAEEQACQAAA4AAAAAAAAAAAACAAAgFAAAEAIgAAAY=</HashCode>
+      <FileName>TOTD.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>
