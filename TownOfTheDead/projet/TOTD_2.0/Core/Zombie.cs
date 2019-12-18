@@ -198,10 +198,10 @@ namespace TOTD
         /// </summary>
         protected override void Mourir()
         {
-            bool Upgraded = false;
+            bool upgraded = false;
             if (balle != null && balle.Type == Type.Upgraded)
-                Upgraded = true;
-            if ( Upgraded == true )
+                upgraded = true;
+            if ( upgraded == true )
                 etat = Etat.MortUp;
             else
                 etat = Etat.Mort;
@@ -252,6 +252,7 @@ namespace TOTD
                 if (randDirY == 1)
                     randY = -randY;
 
+                //translates to player position
                 randX = randX+(player.PositionX/GameManager.TILEWIDTH);
                 randY = randY+(player.PositionY/GameManager.TILEHEIGHT);
             } while (gameManager.IsSpawnable(randX, randY)==false);

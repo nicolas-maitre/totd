@@ -41,6 +41,7 @@ namespace TOTD
         private const int POS_Y_DEPARTPLAYER = 21 * TILEHEIGHT;//Position Y de départ du joueur
         public const int POINTSTIR = 10;//points lors d'une touche d'un zombie
         public const int POINTSMORT = 50;//points lors de la mort d'un zombie
+        public const int POINTSDEPART = 100000;//points de départ
         #endregion
 
         #region Déclaration objets 
@@ -121,8 +122,7 @@ namespace TOTD
             DébutRound();
             round = 1;
             wall.Open = false;
-            points = 0;//points de base
-            
+            points = POINTSDEPART;//points de base
         }
         /// <summary>
         /// Met fin à une partie
@@ -202,7 +202,10 @@ namespace TOTD
         public void GestEntrée()
         {
         #region WASD
-            bool dirD=false;    bool dirG = false;  bool dirH = false;  bool dirB = false;
+            bool dirD = false;
+            bool dirG = false;
+            bool dirH = false;
+            bool dirB = false;
 
             if (Keyboard.GetState().IsKeyDown(Keys.D)|| GamePad.GetState(PlayerIndex.One).ThumbSticks.Left.X>LIMITETHUMBSTICK)
                 dirD = true;
@@ -336,8 +339,9 @@ namespace TOTD
         /// <returns>déplacement possible oui/non</returns>
         public bool IsMovePossible(int xPosX,int xPosY,int xVitesse,Direction xDirection)
         {
-            if (noclip)//Ne fait rien en cas de noclip
+            if (noclip){//Ne fait rien en cas de noclip
                 return true;
+            }
             //Déclaration
             bool possible=true;
             int posVerifX=0;
@@ -348,11 +352,11 @@ namespace TOTD
             //Calcul de la position à vérifier selon cas
             switch (xDirection)
             {
-                case Direction.Haut:    posVerifX = xPosX;  posVerifY = xPosY-Entité.DIFFY-xVitesse;    break;//Haut
+                case Direction.Haut:    posVerifX = xPosX;  posVerifY = xPosY - Entité.DIFFY-xVitesse;  break;//Haut
                 case Direction.Droite:  posVerifY = xPosY;  posVerifX = xPosX + Entité.DIFFX+xVitesse;  break;//Droite
                 case Direction.Bas:     posVerifX = xPosX;  posVerifY = xPosY + Entité.DIFFY+xVitesse;  break;//Bas
-                case Direction.Gauche:  posVerifY = xPosY;  posVerifX = xPosX -Entité.DIFFX-xVitesse;   break;//Gauche
-                case Direction.Fixe:    posVerifY = xPosX;  posVerifY = xPosY;  break;//Pas de mouvement
+                case Direction.Gauche:  posVerifY = xPosY;  posVerifX = xPosX - Entité.DIFFX-xVitesse;  break;//Gauche
+                case Direction.Fixe:    posVerifX = xPosX;  posVerifY = xPosY;  break;//Pas de mouvement
             } 
             //Détermination de sortie de la carte
             if (posVerifX < 0 || posVerifX >= MAPWIDTH*TILEWIDTH || posVerifY < 0 || posVerifY >= MAPHEIGHT*TILEHEIGHT)
@@ -365,24 +369,19 @@ namespace TOTD
             switch (map[posVerifY, posVerifX])
             {
                 //true
-                case TileType.Walkable: possible = true;    break;
-                case TileType.Speed:    possible = true;    break;
-                case TileType.Revive:   possible = true;    break;
-                case TileType.Health:   possible = true;    break;
-                case TileType.Damage:   possible = true;    break;
+                case TileType.Walkable:
+                case TileType.Speed:
+                case TileType.Revive:
+                case TileType.Health:
+                case TileType.Damage:
+                    possible = true;
+                    break;
                 //false
-                case TileType.Wall:     possible = false;   break;
+                case TileType.Wall:
+                    possible = false;
+                    break;
                 //maybe
                 case TileType.Door:
-                    if (wall.Open)
-                    {
-                        possible = true;
-                    }
-                    else
-                    {
-                        possible = false;
-                    }
-                    break;
                 case TileType.Upgrade:
                     if (wall.Open)
                     {
@@ -413,20 +412,24 @@ namespace TOTD
             switch (map[xPosX, xPosY])
             {   
                 //true
-                case TileType.Walkable: possible = true; break;
-                case TileType.Speed: possible = true; break;
-                case TileType.Revive: possible = true; break;
-                case TileType.Health: possible = true; break;
-                case TileType.Damage: possible = true; break;
+                case TileType.Walkable:
+                case TileType.Speed:
+                case TileType.Revive:
+                case TileType.Health:
+                case TileType.Damage:
+                    possible = true;
+                    break;
                 //false
-                case TileType.Wall: possible = false; break;
-                default: possible = false; break;
+                case TileType.Wall:
+                default:
+                    possible = false;
+                    break;
             }
             if(possible&&
                 IsMovePossible(xPosX*TILEWIDTH,xPosY*TILEHEIGHT,0,Direction.Haut)&&
                 IsMovePossible(xPosX*TILEWIDTH,xPosY*TILEHEIGHT,0,Direction.Droite)&&
                 IsMovePossible(xPosX*TILEWIDTH,xPosY*TILEHEIGHT,0,Direction.Bas)&&
-                IsMovePossible(xPosX * TILEWIDTH, xPosY * TILEHEIGHT, 0, Direction.Gauche))
+                IsMovePossible(xPosX*TILEWIDTH, xPosY * TILEHEIGHT, 0, Direction.Gauche))
             {
                 possible = true;
             }

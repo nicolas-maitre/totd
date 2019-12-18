@@ -85,28 +85,28 @@ namespace TOTD
             spriteBatch = new SpriteBatch(GraphicsDevice);
             //Chargement des textures et positions fixes
             //Fond
-            fond.Texture = Content.Load<Texture2D>("bonjour.png");
+            fond.Texture = Content.Load<Texture2D>("bonjour");
             fond.Position = new Vector2(0, 0);
             //world
-            world.Texture = Content.Load<Texture2D>("Worldv2.png");
+            world.Texture = Content.Load<Texture2D>("Worldv2");
             world.Position = new Vector2(0, 0);
             //player
-            player.Texture = Content.Load<Texture2D>("SpritePlayer.png");
+            player.Texture = Content.Load<Texture2D>("SpritePlayer");
             //Position fixe pour ne pas surcharger le processeur - Possible de faire le rendu par rapport au world
             player.Position = new Vector2(Player.posInterfaceX,Player.posInterfaceY);
             //Wall
-            wall.Texture = Content.Load<Texture2D>("RemovableWall.png");
+            wall.Texture = Content.Load<Texture2D>("RemovableWall");
             //Zombie
             for(int indZombie = 0; indZombie < GameManager.MAXZOMBIES; indZombie++)
             {
-                zombies[indZombie].Texture = Content.Load<Texture2D>("SpriteZombie.png");
+                zombies[indZombie].Texture = Content.Load<Texture2D>("SpriteZombie");
             }
             //HUD
             font = Content.Load<SpriteFont>("font");//texte
-            damageIcon.Texture = Content.Load<Texture2D>("Damage.png");
-            healthIcon.Texture = Content.Load<Texture2D>("Health.png");
-            reviveIcon.Texture = Content.Load<Texture2D>("Revive.png");
-            speedIcon.Texture = Content.Load<Texture2D>("Speed.png");
+            damageIcon.Texture = Content.Load<Texture2D>("Damage");
+            healthIcon.Texture = Content.Load<Texture2D>("Health");
+            reviveIcon.Texture = Content.Load<Texture2D>("Revive");
+            speedIcon.Texture = Content.Load<Texture2D>("Speed");
             damageIcon.Position = new Vector2(100, 0);
             healthIcon.Position = new Vector2(175, 0);
             reviveIcon.Position = new Vector2(250, 0);
@@ -136,12 +136,11 @@ namespace TOTD
             balle = player.getBalle;
             if (balle != null)
             {
-                balle.Texture = Content.Load<Texture2D>("SpriteBalle.png");
-                balle.Position = new Vector2
-                    (
+                balle.Texture = Content.Load<Texture2D>("SpriteBalle");
+                balle.Position = new Vector2(
                     gameManager.PosXWorldToWindow(balle.PositionX), 
                     gameManager.PosYWorldToWindow(balle.PositionY)
-                    );
+                );
             }
             //wall
             wall.Position = new Vector2

@@ -4,6 +4,27 @@
   <Platform>Windows</Platform>
   <Config />
   <SourceFiles>
-    <File>C:/wamp64/www/Dropbox/SCHULE/Projet C#/TownOfTheDead/TOTD_2.0/Content/font</File>
+    <File>C:/Users/Diogo.VIEIRA-FERREIR/Desktop/autre/c#/totd/TownOfTheDead/projet/TOTD_2.0/Content/bonjour.png</File>
+    <File>C:/Users/Diogo.VIEIRA-FERREIR/Desktop/autre/c#/totd/TownOfTheDead/projet/TOTD_2.0/Content/Damage.png</File>
+    <File>C:/Users/Diogo.VIEIRA-FERREIR/Desktop/autre/c#/totd/TownOfTheDead/projet/TOTD_2.0/Content/Health.png</File>
+    <File>C:/Users/Diogo.VIEIRA-FERREIR/Desktop/autre/c#/totd/TownOfTheDead/projet/TOTD_2.0/Content/RemovableWall.png</File>
+    <File>C:/Users/Diogo.VIEIRA-FERREIR/Desktop/autre/c#/totd/TownOfTheDead/projet/TOTD_2.0/Content/Revive.png</File>
+    <File>C:/Users/Diogo.VIEIRA-FERREIR/Desktop/autre/c#/totd/TownOfTheDead/projet/TOTD_2.0/Content/Speed.png</File>
+    <File>C:/Users/Diogo.VIEIRA-FERREIR/Desktop/autre/c#/totd/TownOfTheDead/projet/TOTD_2.0/Content/SpriteBalle.png</File>
+    <File>C:/Users/Diogo.VIEIRA-FERREIR/Desktop/autre/c#/totd/TownOfTheDead/projet/TOTD_2.0/Content/SpritePlayer.png</File>
+    <File>C:/Users/Diogo.VIEIRA-FERREIR/Desktop/autre/c#/totd/TownOfTheDead/projet/TOTD_2.0/Content/SpriteZombie.png</File>
+    <File>C:/Users/Diogo.VIEIRA-FERREIR/Desktop/autre/c#/totd/TownOfTheDead/projet/TOTD_2.0/Content/Worldv2.png</File>
   </SourceFiles>
+  <DestFiles>
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+  </DestFiles>
 </SourceFileCollection>
